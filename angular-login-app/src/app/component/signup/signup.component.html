@@ -1,0 +1,18 @@
+<div class="signup-container">
+    <h2>Create Account</h2>
+  
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" name="newUsername" [(ngModel)]="newUsername" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" name="newPassword" [(ngModel)]="newPassword" required>
+      </div>
+  
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+  
